@@ -11,12 +11,12 @@ def load_user(user_id):
 
 class User(db.Model,UserMixin):
     id = db.Column(db.Integer,primary_key = True)
-    firstname = db.Column(db.String(20),unique=True,nullable=False)
-    lastname = db.Column(db.String(20),nullable=False)
-    email = db.Column(db.String(120),unique=True,nullable=False)
-    image_file = db.Column(db.String(20),nullable=False,default = 'image.png')
-    password = db.Column(db.String(50),nullable=False)
-    wishlist = db.Column(db.String(300),nullable=True)
+    firstname = db.Column(db.Text,unique=True,nullable=False)
+    lastname = db.Column(db.Text,nullable=False)
+    email = db.Column(db.Text,unique=True,nullable=False)
+    image_file = db.Column(db.Text,nullable=False,default = 'image.png')
+    password = db.Column(db.Text,nullable=False)
+    wishlist = db.Column(db.Text,nullable=True)
     # posts = db.relationship('Post',backref = 'author',lazy =True)
 
 
