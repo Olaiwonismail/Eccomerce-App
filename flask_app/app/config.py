@@ -7,8 +7,4 @@ class Config:
     SESSION_PERMANENT = False
     SESSION_TYPE = "filesystem"
     SQLALCHEMY_DATABASE_URI =  os.getenv('SQLALCHEMY_DATABASE_URI')
-    # MAIL_PORT=587
-    # MAIL_USE_TLS=True
-    # MAIL_USE_SSL=False
-    # MAIL_USERNAME='olaiwonismail@gmail.com'
-    # MAIL_PASSWORD='oladayo@14'
+    
